@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RootNamespace>Ecommerce_Assignment_FullStack_FreeLance_.API</RootNamespace>
+	  <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.20" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  
+    <ProjectReference Include="..\Ecommerce(Assignment_FullStack_FreeLance).Application\Ecommerce(Assignment_FullStack_FreeLance).Application.csproj" />
+    <ProjectReference Include="..\Ecommerce(Assignment_FullStack_FreeLance).Context\Ecommerce(Assignment_FullStack_FreeLance).Context.csproj" />
+    <ProjectReference Include="..\Ecommerce(Assignment_FullStack_FreeLance).Dtos\Ecommerce(Assignment_FullStack_FreeLance).Dtos.csproj" />
+    <ProjectReference Include="..\Ecommerce(Assignment_FullStack_FreeLance).Infrastructure\Ecommerce(Assignment_FullStack_FreeLance).Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ProductImages\" />
+  </ItemGroup>
+
+</Project>

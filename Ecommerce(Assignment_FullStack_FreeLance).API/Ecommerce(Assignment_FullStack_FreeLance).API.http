@@ -1,0 +1,6 @@
+@Ecommerce_Assignment_FullStack_FreeLance_.API_HostAddress = http://localhost:5271
+
+GET {{Ecommerce_Assignment_FullStack_FreeLance_.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
