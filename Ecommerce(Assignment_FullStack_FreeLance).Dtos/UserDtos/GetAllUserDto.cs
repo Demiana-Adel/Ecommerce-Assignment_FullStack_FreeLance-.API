@@ -8,6 +8,7 @@ namespace Ecommerce_Assignment_FullStack_FreeLance_.Dtos.UserDtos
 {
     public class GetAllUserDto
     {
+        public Guid Id { get; set; }
         public string? UserName { get; set; }
         public string? Email { get; set; }
         public DateTime? LastLoginTime { get; set; }

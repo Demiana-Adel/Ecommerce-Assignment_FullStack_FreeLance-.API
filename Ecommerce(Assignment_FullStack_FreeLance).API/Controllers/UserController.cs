@@ -27,6 +27,12 @@ namespace Ecommerce_Assignment_FullStack_FreeLance_.API.Controllers
             var data = await _userService.LoginUser(login);
             return Ok(data);
         }
+        [HttpPost("UserLogOut")]
+        public async Task<IActionResult> LogoutAsync()
+        {
+            var data = await _userService.LogoutUser();
+            return Ok(data);
+        }
         [HttpGet("GetALlUsers")]
         public async Task<IActionResult> GetAllAsync()
         {

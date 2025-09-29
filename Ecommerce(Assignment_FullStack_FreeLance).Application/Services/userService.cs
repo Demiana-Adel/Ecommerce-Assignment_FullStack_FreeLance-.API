@@ -49,7 +49,7 @@ namespace Ecommerce_Assignment_FullStack_FreeLance_.Application.Services
             var users = Alldata.Where(u => u.IsDeleted == false).Skip(items * (pagenumber - 1)).Take(items)
                                               .Select(u=> new GetAllUserDto
                                               {
-
+                                                  Id = u.Id,
                                                   UserName = u.UserName,
                                                   Email = u.Email,
                                                   LastLoginTime = u.LastLoginTime,
@@ -126,7 +126,7 @@ namespace Ecommerce_Assignment_FullStack_FreeLance_.Application.Services
 
         public Task<bool> LogoutUser()
         {
-            throw new NotImplementedException();
+           return Task.FromResult(true);
         }
         private string GenerateJwtToken(User user)
         {
